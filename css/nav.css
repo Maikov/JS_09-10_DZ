@@ -1,0 +1,94 @@
+nav {
+  background: linear-gradient(to top, #800000, #A52A2A);
+  padding: 5px 0;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 7px 7px;
+  box-shadow: 2px 3px 5px #000;
+  position:relative;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+/* SUBMENU */
+
+nav li ul {  
+  background: linear-gradient(to top, #800000, #A52A2A);
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 120px;
+  text-align: left;
+}
+
+nav li li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+
+/* SUBLINKS */
+
+nav li li ul {
+  position:absolute;
+  top: 0;
+  left: 120px; /* make this equal to the width of the sub nav above */
+  margin: 0;
+}
+
+nav a {
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+}
+
+/* LINKS */
+
+nav a {
+  color:#fff;
+  text-decoration:none;
+  display:block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #000;
+}
+
+nav li li a {
+  border-bottom: solid 1px #000;
+  margin:0 10px;
+  padding: 0;
+}
+
+nav li li:last-child a {
+  border-bottom:none;
+}
+
+nav li.dropdown > a {
+  background-image:url('../img/arrow-down.png');
+  background-position:right 20px;
+  background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+  background-image:url('../img/arrow-right.png');
+  background-position:right 16px;
+  background-repeat:no-repeat;
+}
+
+ul.sub-menu {
+  display:none;
+}
