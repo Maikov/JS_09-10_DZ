@@ -2,13 +2,161 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>09-10</title>
-   	<link rel="stylesheet" href="css/style.css">
+	<title>MENU CAROUSEL SELECTOR CHECKBOX</title>
+   	
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jcarousel.connected-carousels.css">
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
+    <link rel="stylesheet" href="css/nav.css">
+     	
    	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/jcarousel.connected-carousels.js"></script>
+    <script src="js/jquery.selectbox-0.2.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-	
+    <div class="wrapper">
+            <div class="logo">
+                <a href="http://housebud.com.ua" target="_blank">
+                <img src="img/logo.png" height="88" width="206" alt="HouseBud"></a>
+            </div>
+        <h1 class="h1">СТРОИМ БАНЮ</h1>
+        <nav>
+            <ul>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">ТЕХНОЛОГИЯ</a></li>
+                <li class="dropdown">
+                    <a href="#">НАШИ РАБОТЫ</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Дома</a></li>
+                        <li class="dropdown">
+                            <a href="#">Бани</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Размер 4*4</a></li>
+                                <li><a href="#">Размер 5*5</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Размер 6*6</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Один этаж</a></li>
+                                        <li><a href="#">Два этажа</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Беседки</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <h1 class="h1">ФОТО ГАЛЛЕРЕЯ</h1>
+
+        <!--CAROUSEL-->   
+
+        <div class="connected-carousels">
+            <div class="stage">
+                <div class="carousel carousel-stage">
+                    <ul>
+                        <li><img src="img/banya_1.jpg" width="500" height="320" alt=""></li>
+                        <li><img src="img/banya_2.jpg" width="500" height="320" alt=""></li>
+                        <li><img src="img/banya_3.jpg" width="500" height="320" alt=""></li>
+                        <li><img src="img/banya_4.jpg" width="500" height="320" alt=""></li>
+                        <li><img src="img/banya_5.jpg" width="500" height="320" alt=""></li>
+                    </ul>
+                </div>
+                <p class="photo-credits">Photos by Maykov Anton</p>
+				<a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+            </div>
+
+            <div class="navigation">
+                <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                <a href="#" class="next next-navigation">&rsaquo;</a>
+                <div class="carousel carousel-navigation">
+                    <ul>
+                        <li><img src="img/banya_1.jpg" width="60" height="50" alt=""></li>
+                        <li><img src="img/banya_2.jpg" width="60" height="50" alt=""></li>
+                        <li><img src="img/banya_3.jpg" width="60" height="50" alt=""></li>
+                        <li><img src="img/banya_4.jpg" width="60" height="50" alt=""></li>
+                        <li><img src="img/banya_5.jpg" width="60" height="50" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </div>
+
+<h1 class="h1">ВЫБИРАЕМ ВАРИАНТЫ</h1>
+    
+    <!--SELECTOR-->  
+
+    <select name="country_id" id="country_id" tabindex="1">
+        <option value="">ВАРИАНТЫ ОТДЕЛКИ</option>
+        <optgroup label="Внешняя отделка">
+            <option value="1">Фахверк</option>
+            <option value="9">Блокхаус</option>
+        </optgroup>
+        <optgroup label="Внутреняя отделка">
+            <option value="2">Вагонка</option>
+            <option value="3">Блокхаус</option>
+            <option value="6">Плитка</option>
+            <option value="7" disabled="disabled">Панели Кроноспан</option>        
+            <option value="8">Покраска</option>
+        </optgroup>
+        <optgroup label="Отделка парилки" disabled="disabled"> 
+            <option value="5">Липовая вагонка</option>           
+            <option value="11">Абаш</option>    
+        </optgroup>   
+            <option value="4">Крыша</option>    
+            <option value="10">Цоколь</option>    
+    </select>
+
+
+<div class="checkboxes">
+
+    <form class="jquerybox" action="#">
+        <h4 class="h4">Checkbox JQuery</h4>
+            <div>
+                <span class="niceCheck">             
+                <input type="checkbox" name="" id="ch1" value="on" tabindex="1">
+                </span> 
+                <label class="jbox" for="ch1">Дома</label>
+            </div>
+            <div>
+                <span class="niceCheck">
+                <input type="checkbox" name="" id="ch2" checked="true" value="2" tabindex="2">
+                </span>
+                <label class="jbox" for="ch1">Бани</label>
+            </div>
+            <div>
+                <span class="niceCheck niceCheckDisabled">
+                <input type="checkbox" name="" id="ch3" checked="true" value="on" tabindex="0" disabled>
+                </span>
+                <label class="jbox" for="ch1">Беседки</label>
+            </div>
+    </form>
+
+    <div class="cssbox">
+        <h4 class="h4">Checkbox CSS</h4>
+        <div>
+            <input type="checkbox" id="test-check1">
+            <label for="test-check1" id="label">Бани</label>
+
+        </div>
+        <div>
+            <input type="checkbox" id="test-check2">
+            <label for="test-check2" id="label">Бани</label>
+        </div>
+        <div>
+           <input type="checkbox" id="test-check3">
+            <label for="test-check3" id="label">Бани</label>
+        </div>
+    </div>
+    
+</div>
+
 
 </body>
 </html>
