@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/jcarousel.connected-carousels.css">
     <link rel="stylesheet" href="css/jquery.selectbox.css">
     <link rel="stylesheet" href="css/nav.css">
-     	
+   
    	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="js/jquery.jcarousel.js"></script>
 	<script src="js/jcarousel.connected-carousels.js"></script>
     <script src="js/jquery.selectbox-0.2.js"></script>
     <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.color.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -115,42 +116,42 @@
 
 <div class="checkboxes">
 
-    <form class="jquerybox" action="#">
-        <h4 class="h4">Checkbox JQuery</h4>
+    <div class="jquerybox">
+    <h4 class="h4">Checkbox jQuery</h4>
+        <form action="#">
             <div>
-                <span class="niceCheck">             
-                <input type="checkbox" name="" id="ch1" value="on" tabindex="1">
-                </span> 
-                <label class="jbox" for="ch1">Дома</label>
+                <input class="checkCustom" type="checkbox" value="Y" name="checkbox1" id="checkbox1" checked>
+                <label for="checkbox1">Бани</label>
             </div>
-            <div>
-                <span class="niceCheck">
-                <input type="checkbox" name="" id="ch2" checked="true" value="2" tabindex="2">
-                </span>
-                <label class="jbox" for="ch1">Бани</label>
+
+            <div>    
+                <input class="checkCustom" type="checkbox" value="Y" name="checkbox2" id="checkbox2">
+                <label for="checkbox2">Дома</label>
             </div>
-            <div>
-                <span class="niceCheck niceCheckDisabled">
-                <input type="checkbox" name="" id="ch3" checked="true" value="on" tabindex="0" disabled>
-                </span>
-                <label class="jbox" for="ch1">Беседки</label>
+
+            <div>    
+                <input class="checkCustom" type="checkbox" value="Y" name="checkbox3" id="checkbox3" disabled="disabled">
+                <label for="checkbox3">Беседки</label>
             </div>
-    </form>
+
+        </form>
+    
+    </div>
 
     <div class="cssbox">
         <h4 class="h4">Checkbox CSS</h4>
         <div>
             <input type="checkbox" id="test-check1">
-            <label for="test-check1" id="label">Бани</label>
+            <label for="test-check1" class="label">Бани</label>
 
         </div>
         <div>
             <input type="checkbox" id="test-check2">
-            <label for="test-check2" id="label">Бани</label>
+            <label for="test-check2" class="label">Бани</label>
         </div>
         <div>
-           <input type="checkbox" id="test-check3">
-            <label for="test-check3" id="label">Бани</label>
+            <input type="checkbox" id="test-check3">
+            <label for="test-check3" class="label">Бани</label>
         </div>
     </div>
     

@@ -1,5 +1,7 @@
 nav {
-  background: linear-gradient(to top, #800000, #A52A2A);
+  /*background: linear-gradient(to top, #800000, #A52A2A);*/
+  background-color: rgb(165,42,42);
+
   padding: 5px 0;
   width: 800px;
   margin: 0 auto;
@@ -24,12 +26,11 @@ nav ul li {
 /* SUBMENU */
 
 nav li ul {  
-  background: linear-gradient(to top, #800000, #A52A2A);
+  background-color: rgb(165,42,42);
   position: absolute;
   left: 0;
   top: 40px;
-  width: 120px;
-  text-align: left;
+  width: 150px;
 }
 
 nav li li {
@@ -43,7 +44,7 @@ nav li li {
 nav li li ul {
   position:absolute;
   top: 0;
-  left: 120px; /* make this equal to the width of the sub nav above */
+  left: 120px;  make this equal to the width of the sub nav above 
   margin: 0;
 }
 
@@ -92,3 +93,4 @@ nav li li.dropdown > a {
 ul.sub-menu {
   display:none;
 }
+

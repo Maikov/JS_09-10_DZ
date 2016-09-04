@@ -10,28 +10,40 @@ $(function() {
 
 $(function () {
     $("#country_id").selectbox();
-	});
 
-// MENU
+});
+
+
+// ANIMATE MENU
+
 	$( '.dropdown' ).hover(
         function(){
             $(this).children('.sub-menu').slideDown(200);
         },
         function(){
-            $(this).children('.sub-menu').slideUp(100);
+            $(this).children('.sub-menu').slideUp(200);
         }
     );
+ 
     $( '.sub-menu' ).mouseenter(
     	function () {
     		$(this).animate({
     			backgroundColor:"rgb(255,100,100)",
-    		},1000);
+    		},500);
     });
+
     $( '.sub-menu' ).mouseleave(
     	function () {
     		$(this).animate({
-    			backgroundColor:"rgb(255,10,10)",
-    		},1000);
+    		    backgroundColor:"rgb(255,10,10)",
+    		},500);
     	}
-    	);
+    );
+});
+
+
+// CHECKBOX SWITCH ON
+
+$(function(){
+    $('.checkCustom').checkbox();
 });
