@@ -18,7 +18,7 @@ $(function () {
 
 	$( '.dropdown' ).hover(
         function(){
-            $(this).children('.sub-menu').slideDown(200);
+            $(this).children('.sub-menu').slideDown(300);
         },
         function(){
             $(this).children('.sub-menu').slideUp(200);
