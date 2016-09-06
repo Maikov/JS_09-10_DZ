@@ -28,19 +28,18 @@ $(function () {
     $( '.sub-menu' ).mouseenter(
     	function () {
     		$(this).animate({
-    			backgroundColor:"rgb(255,100,100)",
+    			backgroundColor:"#800000",
     		},500);
     });
 
     $( '.sub-menu' ).mouseleave(
     	function () {
     		$(this).animate({
-    		    backgroundColor:"rgb(255,10,10)",
+    		    backgroundColor:"#c0c0c0",
     		},500);
     	}
     );
 });
-
 
 // CHECKBOX SWITCH ON
 

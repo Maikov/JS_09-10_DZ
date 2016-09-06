@@ -1,6 +1,6 @@
 nav {
   /*background: linear-gradient(to top, #800000, #A52A2A);*/
-  background-color: rgb(165,42,42);
+  background-color: #800000;
 
   padding: 5px 0;
   width: 800px;
@@ -26,7 +26,7 @@ nav ul li {
 /* SUBMENU */
 
 nav li ul {  
-  background-color: rgb(165,42,42);
+  background-color: #800000;
   position: absolute;
   left: 0;
   top: 40px;
